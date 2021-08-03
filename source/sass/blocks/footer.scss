@@ -1,0 +1,122 @@
+.footer {
+    max-width: 1200px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: auto;
+}
+.footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    text-align: right;
+}
+.footer__nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.footer__menu {
+    text-align: right;
+
+    & li {
+        margin-bottom: 25px;
+    }
+
+    & a {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.63);
+        text-decoration: none;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    & a {
+        position: relative;
+        text-decoration: none;
+        padding-left: 25px;
+        width: max-content;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    & a::after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        left: 0;
+        top: 5px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    & a:first-child {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #A047D4;
+        &::after {
+            background-image: url(../img/call.svg);
+        }
+    }
+    & a:nth-child(2) {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        &::after {
+            background-image: url(../img/mail.svg);
+        }
+    }
+}
+
+@media (max-width:880px) {
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer__menu {
+        text-align: center;
+        width: 100%;
+        order: -1;
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .footer__form {
+        margin: 52px auto;
+    }
+    .footer__logo {
+        width: 180px;
+    }
+    .footer__contacts {
+        margin-top: 52px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer__logo {
+        width: 80px;
+    }
+    .footer__contacts a:first-child {
+        font-size: 18px;
+    }
+    .footer__contacts a:last-child {
+        font-size: 16px;
+    }
+    .footer__info {
+        margin-bottom: 20px;
+    } 
+    .footer__menu ul {
+        flex-direction: column;
+    }
+}

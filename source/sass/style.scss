@@ -1,0 +1,52 @@
+// blocks
+@import "blocks/header.scss";
+@import "blocks/top.scss";
+@import "blocks/about.scss";
+@import "blocks/power.scss";
+@import "blocks/aside.scss";
+@import "blocks/seo.scss";
+@import "blocks/team.scss";
+@import "blocks/price.scss";
+@import "blocks/works.scss";
+@import "blocks/footer.scss";
+
+@import "blocks/send-form.scss";
+@import "blocks/up.scss";
+
+.page {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+.overflow {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+section {  
+  overflow-x: hidden;
+  height: max-content;
+}
+main,
+header,
+footer {
+  font-family: Open Sans;
+  font-style: normal;
+}
+p {
+  margin: 0;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  object-fit: contain;
+  -webkit-backface-visibility: hidden; 
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
