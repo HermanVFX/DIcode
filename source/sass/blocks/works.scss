@@ -40,7 +40,11 @@
         color: #63239D;
     }
 }
-
+@media (max-width:1024px) {
+    .works__wrapper img {
+        width: 43%;
+    }
+}
 @media (max-width:768px) {
     .works {
         height: 1100px;
@@ -68,7 +72,8 @@
         & img {
             position: absolute;
             right: 25%;
-            bottom: -165px;
+            width: 50%;
+            bottom: -190px;
         }
         & a {
             text-decoration: none;
